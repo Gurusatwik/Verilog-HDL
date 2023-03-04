@@ -1,6 +1,6 @@
 //popcount is a circuit that is used to count the number of 1s in a Vector.
 
-module top_module (
+module popcount (
 	input [254:0] in,
 	output reg [7:0] out
 );
