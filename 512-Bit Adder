@@ -1,4 +1,4 @@
-module bcd100adder_logical(
+module adder512(
 input [511:0]a,b,
 input cin,
 output cout,
