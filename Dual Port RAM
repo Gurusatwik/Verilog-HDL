@@ -14,7 +14,7 @@ begin
     ram[addr1] <= data1;
 
   else
-    out1 <= ram[addr1];
+    out1 <= ram[addr1]; 
 end
 
 always @(posedge clk)
