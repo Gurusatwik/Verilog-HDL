@@ -1,0 +1,21 @@
+module ram_sp(
+  input clk, we,
+  input [10:0] addr,
+  input [15:0] data,
+  output [15:0] out
+);
+
+reg [15:0] ram [1152:0];
+reg [15:0] out;
+
+always @(posedge clk)
+begin
+  if(we)
+    ram[addr] <= data;
+
+  else 
+    out <= ram[addr];
+
+end
+
+endmodule
